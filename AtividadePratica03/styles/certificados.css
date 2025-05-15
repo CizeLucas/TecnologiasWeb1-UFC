@@ -1,0 +1,9 @@
+header {
+ font-size: 12px;
+}
+
+#certificados {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
