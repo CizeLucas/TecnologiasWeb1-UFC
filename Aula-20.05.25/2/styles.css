@@ -1,0 +1,38 @@
+/* descendente */
+#descendente div p {
+    color: blue;
+}
+
+/* Filho Direto */
+#filho-direto div > p {
+    color: green;
+}
+
+/* Seletor de Irmão Adjacente */
+#adjacente h3 + p {
+    color: violet;
+}
+
+/* Seletor Irmão Geral */
+#irmaos h3 ~ p  {
+    color: purple;
+}
+
+/* Seletor de Grupo */
+#grupo h1, #grupo h2, #grupo p {
+    font-weight: bold;
+    color: aqua;
+}
+
+#combinando .especial {
+    color: darkblue;
+}
+
+#combinando p + p {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#combinando .container p.especial {
+    color: darkred;
+}

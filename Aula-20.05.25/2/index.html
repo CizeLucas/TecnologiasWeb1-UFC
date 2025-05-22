@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 20.05.25</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section id="descendente">
+        <h2> Seletores Descendentes </h2>
+        <div>
+            <p>Estamos combinando os seletores</p>
+            <section>
+                <p>Um novo paragrafo</p>
+            </section>
+        </div>
+    </section>
+
+    <section id="filho-direto">
+        <h2> Seletores de Filho Direto </h2>
+        <div>
+            <p>Este parágrafo ficará verde pois é um filho direto do div.</p>
+            <section>
+                <p>Um novo paragrafo aqui temos</p>
+            </section>
+        </div>
+    </section>
+
+    <section id="adjacente">
+        <h2>Seletores Adjacentes</h2>
+        <h3>Título 1</h3>
+        <p>Este parágrafo ficará vermelho pois é adjacente ao h3</p>
+        <p>Este parágrafo não será afetado!</p>
+    </section>
+
+    <section id="irmaos">
+        <h2>Seletores de Irmãos Gerais</h2>
+        <h3>Título 2</h3>
+        <p>Todos os parágrafos após esse título ficarão roxos</p>
+        <p>Este parágrafo também!</p>
+    </section>
+
+    <section id="grupo">
+        <h2>Seletores de Grupo</h2>
+        <h1>Este Título é um h1</h1>
+        <h2>Este Título é um h2</h2>
+        <p>Todos os parágrafos com seletores de grupo</p>
+        <p>Este tmb!</p>
+    </section>
+
+    <section id="combinando">
+        <h2>Combinando Seletores para uma maior especifidade</h2>
+        <div class="container">
+            <p class="especial">Este parágrafo é especial!</p>
+            <p>Este parágrafo não será afetado.</p>
+        </div>
+        <p class="especial">Apesar de ser especial, esse parárafo terá uma estilização diferente do outro</p>
+    </section>
+</body>
+</html>

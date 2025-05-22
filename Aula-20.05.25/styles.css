@@ -1,0 +1,11 @@
+p {
+    color: blue;
+}
+
+.destaque p {
+    color: green;
+}
+
+#info p {
+    color: violet;
+}

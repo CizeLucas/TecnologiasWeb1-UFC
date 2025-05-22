@@ -1,0 +1,41 @@
+#static .box {
+    position: static;
+}
+
+#relative .relative {
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+#absolute .absolute {
+    position: absolute;
+    top: 20px;
+}
+
+#fixed .fixed {
+    position: fixed;
+    top: 20px
+}
+
+#sticky {
+    background-color: orange;
+    position: sticky;
+    bottom: 0px;
+    top: 0px;
+}
+
+section {
+    margin-bottom: 50px
+}
+
+.box {
+    background-color: cadetblue;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+
+    font-size: 12px;
+    line-height: 0px;
+}
+
