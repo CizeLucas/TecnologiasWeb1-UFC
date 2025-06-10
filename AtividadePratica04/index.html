@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- 
+        Uma mensagem que muda ao clicar em um botão. (OK)
+        Uma imagem que muda ao clicar em outro botão. (OK)
+        Um parágrafo que pode ser ocultado e mostrado. (OK)
+        Um botão que altera seu próprio texto ao ser clicado. (OK) 
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Profissionalizante</title>
+</head>
+<body>
+    <div style="display: flex; justify-content: space-around;">
+        <h1>Escola Vitoria Emilly Santos Melo</h1>
+        <img src="./assets/escola-profissionalizante.jpg" height="75"/>
+    </div>
+    <hr>
+
+    <h2>Bem-vindo(a) ao portal da escola!</h2>
+
+    <button id="toggle-message-button" onclick="toggleMotivationalMessage()">Clique para ver uma mensagem motivacional</button>
+    <p id="motivational-message" style="display: none;"><strong>A persistência é o caminho do êxito.</strong></p>
+    
+    <hr>
+
+    <h2>Tarefas da Matéria:</h2>
+
+    <section id="subject-activities" style="height: 100px;">
+        
+    </section>
+    
+    <button id="" onclick="toggleBetweenSubjects()">Clique para ver as atividades de outra matéria</button>
+    <hr>
+    <form>
+        <h4>Em caso de problema, entre em contato com o professor(a) enviando uma mensagem abaixo:</h4>
+        <textarea placeholder="Envie sua mensagem ao Professor(a) aqui"></textarea>
+        <button type="button" id="form-submit-button" onclick="handleFormSubmit()" onsubmit="">Enviar mensagem</button>
+        <img id="form-image" src="./assets/aluno-feliz.jpg" height="75" alt=""/>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

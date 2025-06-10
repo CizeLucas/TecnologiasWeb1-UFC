@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Paragraph changed.";
+        }
+    </script>
+
+</head>
+<body>
+    <hr>
+    <section>
+        <h2>What can JavaScript Do?</h2>
+        
+        <p id="demo">JavaScript can change html content.</p>
+        
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>
+            Click Me!
+        </button>
+        <button type="button" onclick="myFunction()">Click me to change the text</button>
+    </section>
+    <hr>
+    <section>
+        <p>JavaScript can change html attribute values</p>
+
+        <p>O JavaScript pode alterar valores de atributos html. Neste caso, o JavaScript altera o valor do atributo src (source) de uma imagem.</p>
+
+        <button onclick="document.getElementById('myImage').src = './assets/pic_bulbon.gif'">Turn on the light</button>
+
+        <img id="myImage" src="./assets/pic_bulboff.gif" alt="Light Bulb" style="width:100px;height:180px;">
+
+        <button onclick="document.getElementById('myImage').src = './assets/pic_bulboff.gif'">Turn off the light</button>
+    </section>
+    <hr>
+    <section>
+        <p id="p1_demo">JavaScript pode ocultar elementos html</p>
+
+        <button type="button" onclick="document.getElementById('p1_demo').style.display = 'none'">Click me to hide!</button>
+        <button type="button" onclick="document.getElementById('p1_demo').style.display = 'block'">Click me to show!</button>
+
+    </section>
+    <hr>
+
+    <script src="script.js"></script>
+</body>
+</html>
